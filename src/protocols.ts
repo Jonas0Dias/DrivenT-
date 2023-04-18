@@ -34,7 +34,6 @@ export type TicketType = {
   price: string;
   isRemote: boolean;
   includesHotel: boolean;
-  createdAt: string ;
-  updatedAt:  string;
+  createdAt: string;
+  updatedAt: string;
 };
-
