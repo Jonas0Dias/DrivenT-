@@ -1,3 +1,6 @@
+import { Ticket } from "@prisma/client";
+
+
 export type ApplicationError = {
   name: string;
   message: string;
@@ -37,3 +40,10 @@ export type TicketType = {
   createdAt: string;
   updatedAt: string;
 };
+
+export type PostTicket = {
+  ticketTypeId: number;
+};
+
+
+export type CreateTicketParams = Omit<Ticket, 'id' | 'createdAt' | 'updatedAt'>;
